@@ -22,12 +22,7 @@
 
 #endregion License Information (GPL v3)
 
-using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Xml.Serialization;
 
 namespace ScriptingLib
 {
@@ -38,9 +33,15 @@ namespace ScriptingLib
         public byte G { get; set; }
         public byte B { get; set; }
 
-        public XmlColor() : this(0, 0, 0) { }
+        public XmlColor()
+            : this(0, 0, 0)
+        {
+        }
 
-        public XmlColor(byte r, byte g, byte b) : this(255, r, g, b) { }
+        public XmlColor(byte r, byte g, byte b)
+            : this(255, r, g, b)
+        {
+        }
 
         public XmlColor(byte a, byte r, byte g, byte b)
         {
@@ -50,7 +51,10 @@ namespace ScriptingLib
             B = b;
         }
 
-        public XmlColor(Color color) : this(color.A, color.R, color.G, color.B) { }
+        public XmlColor(Color color)
+            : this(color.A, color.R, color.G, color.B)
+        {
+        }
 
         public Color ToColor()
         {

@@ -22,13 +22,10 @@
 
 #endregion License Information (GPL v3)
 
+using ScriptingLib;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-using ScriptingLib;
 
 namespace Automate
 {
@@ -55,9 +52,13 @@ namespace Automate
             }
         }
 
-        public virtual void Prepare() { }
+        public virtual void Prepare()
+        {
+        }
 
-        protected virtual void Method() { }
+        protected virtual void Method()
+        {
+        }
     }
 
     public class Function_Goto : Function

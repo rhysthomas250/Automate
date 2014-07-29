@@ -22,12 +22,11 @@
 
 #endregion License Information (GPL v3)
 
+using ScriptingLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using ScriptingLib;
 
 namespace Automate
 {
@@ -49,9 +48,9 @@ namespace Automate
             { "MouseWheel", typeof(Function_MouseWheel) }
         };
 
+        public List<Function> FunctionList { get; private set; }
         public int LineDelay { get; set; }
 
-        private List<Function> FunctionList;
         private bool stopRequest;
 
         public Function GetFunction(string name, string[] parameters)

@@ -22,11 +22,6 @@
 
 #endregion License Information (GPL v3)
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 namespace ScriptingLib
 {
     public enum TokenType
